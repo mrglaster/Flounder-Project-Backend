@@ -1,0 +1,30 @@
+<gsmf>
+  <init>
+    <author>azazello</author>
+    <title>Test</title>
+    <wlang>de</wlang>
+    <date>2024-06-28</date>
+    <trfillmode>hands</trfillmode>
+    <cover>default</cover>
+ </init>
+ <wlist>
+    <word>der Kater, das Auto</word>
+ </wlist>
+ <translations>
+    <ru>
+        <tr>кот</tr>
+        <tr>машина</tr>
+    </ru>
+ </translations>
+ <audio>
+     <spk>NOT FOUND</spk>
+ </audio>
+ <definitions>
+     <wdblock>
+     </wdblock>
+ </definitions>
+ <examples>
+     <exblock>
+     </exblock>
+ </examples>
+</gsmf>

@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: flounder-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: auth_service
+          uri: http://192.168.0.121:5612
+          predicates:
+            - Path=/api/auth/**
+        - id: study-modules-provider
+          uri: http://192.168.0.121:5613
+          predicates:
+            - Path=/api/study/modules/**
+        - id: pronunciation-service
+          uri: http://192.168.0.121:5614
+          predicates:
+            - Path=/api/study/pronunciation/**
+        - id: study-generator
+          uri: http://192.168.0.121:5615
+          predicates:
+            - Path=/download/**

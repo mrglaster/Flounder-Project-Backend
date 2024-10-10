@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: pronunciation-service
+
+server:
+  port: 5614
+  error:
+    whitelabel:
+      enabled: false
+
+flounder:
+  pronunciation:
+    en:
+      pronunciation_assessment:
+        key: use-ur-own
+        host: pronunciation-assessment1.p.rapidapi.com

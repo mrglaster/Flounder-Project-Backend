@@ -1,0 +1,22 @@
+server:
+  port: 5612
+  error:
+    whitelabel:
+      enabled: false
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/flounder
+    username: demo
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+
+flounder:
+  app:
+    jwtSecret: W4ZLw4M8hAN433XeFYmxLSeHNtZajcU0YuZDv10TAMH9FpiHaVNRnfEnXuqaeYLCPBHkg9LwhZNRKYzTAuK91MRKeBRZeXyYbNcF7QtmvHCNCFRYDyHCA1ZVGxC6QH6RkdE6QVqgMB1m82N3xyD4bpwtWyqxn3kfvNhw6YjuWm61fQFb0VWf32KpvEuF653GrdLSgUUDTH2Uv8VTEC22yDZMTvJVap05XXz2An6H4Zw1ZXyZz1FizDPKxgA1pqru
+    jwtExpirationMs: 86400000

@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package module;
+
+service ModuleService {
+  rpc CreateModule (ModuleCreationRequest) returns (ModuleCreationResponse);
+}
+
+message ModuleCreationRequest {
+  string file_name = 1;
+  string author = 2;
+  string title = 3;
+  string language = 4;
+  repeated string wordlist = 5;
+  repeated string translations = 6;
+  string translations_language = 7;
+  string icon = 8;
+  int32 module_id = 9;
+}
+
+message ModuleCreationResponse {
+  string status = 1;
+}
