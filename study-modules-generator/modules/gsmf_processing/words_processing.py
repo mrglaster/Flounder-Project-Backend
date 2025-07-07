@@ -84,12 +84,12 @@ def get_wordinfo_en(word):
 
 def get_wordinfo_de_proto(word, hint_lang="en"):
     """Gets information about the current German word
-    PROTOTYPE! WILL BE REMOVED! USE ON YOUR OWN RISK!"""
+    PROTOTYPE! WILL BE REMOVED! USE ON YOUR OWN RISK! API KEY FROM EXAMPLE, IT'S NOT VALID"""
     url = "https://lexicala1.p.rapidapi.com/search-entries"
     word_new = word.replace("der", "").replace("die", "").replace("das", "").replace(" ", '')
     querystring = {f"text": f"{word_new}", "language": "de"}
     headers = {
-        "X-RapidAPI-Key": "fc0375a11fmsh92b1219e5849c87p17ddc4jsn8bc03c3f1c4e",
+        "X-RapidAPI-Key": "example-api-key",
         "X-RapidAPI-Host": "lexicala1.p.rapidapi.com"
     }
     response = requests.request("GET", url, headers=headers, params=querystring).json()["results"]
